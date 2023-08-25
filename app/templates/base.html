@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block subject %}
+        <meta name="description" content="Пусто">
+        <meta name="subject" content="Пусто">
+    {% endblock %}
+
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>Photostock - Alex Tan</title>
+    {% endif %}
+    <title>Title</title>
+</head>
+<header>Верхняя часть сайта</header>
+<body>
+    {% block content %}
+        Основная часть сайта
+    {% endblock %}
+</body>
+<footer>Нижняя часть сайта + javsascript</footer>
+</html>

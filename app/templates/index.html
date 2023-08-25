@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block subject %}
+<meta name="description" content="{{ description }}">
+<meta name="subject" content="{{ subject }}">
+{% endblock %}
+{% block content %}
+<h1>Hi, {{ user.nickname }}</h1>
+{% endblock %}
